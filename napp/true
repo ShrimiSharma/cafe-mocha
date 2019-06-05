@@ -1,0 +1,2 @@
+      invoke  active_record
+      create    db/migrate/20190603085739_add_index_to_asin.rb

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Napp</title>
+  <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+      <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+<header>
+  <font face="verdana" color="purple">
+    <h1>Amazon Product Info Lookup</h1>
+  </font>
+  </p>
+  <p>Some additional information here</p>
+  <p>
+    <h3>
+      <%= link_to 'Home', root_path %> | <%= link_to 'View Products', products_path%>
+    </h3>
+
+  </p>
+</header>
+
+<body>
+  <%= yield %>
+</body>
+<footer>
+  <p>Created By: Shrimi Sharma</p>
+  <p>Contact information: <a href="mailto:shrimi@me.com">
+  shrimi@me.com</a>.</p>
+</footer>
+
+</html>

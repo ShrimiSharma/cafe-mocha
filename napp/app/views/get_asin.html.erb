@@ -1,0 +1,20 @@
+<p id="notice">
+  <%= notice %>
+</p>
+
+<h3> Please Enter ASIN </h3>
+<%= form_tag("/get_asin", method: "get") do %>
+  <%= text_field_tag(:q) %>
+    <%= submit_tag("Submit") %>
+      <% end %>
+        <br><br>
+
+        <%= form_tag("/get_asin", method: "post") do %>
+          <% if @doc %>
+            <%= @title %><br><br>
+              <%= @category %> <br><br>
+                <%= @dimensions %> <br><br>
+                  <%= @rank %> <br><br>
+                    <%= @doc %>
+                      <% end %>
+                        <% end %>
