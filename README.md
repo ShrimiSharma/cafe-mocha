@@ -12,4 +12,7 @@ Watir and Nokogiri gems are used to scrape product information from the Amazon w
   <li> Product Dimensions </li>
  </ol> 
   <p>Users can also view all the products that have already been added to the database.</p>
+  <p>Please note, at this time certain Product ASIN's are unable to retrieve dimension and rank information. The cause is undetermined as yet.</p>
   <p>The application was created using Codeanywhere cross platform cloud IDE. The application uses Ruby 2.5.1 on Centos7.2 and  MySql database as part of the package provided by the IDE.</p>
+  
+ 
