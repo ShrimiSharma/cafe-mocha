@@ -104,7 +104,7 @@
       #puts @rank.inspect
       rescue OpenURI::HTTPError => e
         if e.message == '404 Not Found'
-          raise ActionController::RoutingError.new('Not Found')
+          raise ActionController::RoutingError.new('Could not find this product on Amazon. Please enter a valid ASIN.')
   else
     redirect_to root_path, notice: 'Please enter a valid ASIN.'
   end
