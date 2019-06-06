@@ -29,14 +29,10 @@
          @category = @doc.at("#wayfinding-breadcrumbs_container").text.strip #unless @doc.at("#wayfinding-breadcrumbs_container").nil?
         
          prod_details = @doc.css("div#prodDetails")
-         puts prod_details.inspect
+         #puts prod_details.inspect
 					
-					if prod_details.nil?
-						prod_details = @doc.css("div#descriptionAndDetails")
-					end
-          
-          @dimensions = prod_details.at(':contains("Dimensions"):not(:has(:contains("Dimensions")))').next_element.text.strip unless prod_details.at(':contains("Dimensions"):not(:has(:contains("Dimensions")))').nil?
-          @rank = prod_details.at(':contains("Best Sellers Rank"):not(:has(:contains("Best Sellers Rank")))').next_element.text.strip.split("(")[0] unless prod_details.at(':contains("Best Sellers Rank"):not(:has(:contains("Best Sellers Rank")))').nil?
+         @dimensions = prod_details.at(':contains("Dimensions"):not(:has(:contains("Dimensions")))').next_element.text.strip unless prod_details.at(':contains("Dimensions"):not(:has(:contains("Dimensions")))').nil?
+         @rank = prod_details.at(':contains("Best Sellers Rank"):not(:has(:contains("Best Sellers Rank")))').next_element.text.strip.split("(")[0] unless prod_details.at(':contains("Best Sellers Rank"):not(:has(:contains("Best Sellers Rank")))').nil?
           
        
 
