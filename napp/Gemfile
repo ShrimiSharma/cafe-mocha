@@ -38,7 +38,9 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'nokogiri'
 #gem 'responders'
-#gem 'watir'
+gem 'watir'
+#gem 'chromedriver-helper'
+gem 'webdriver'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
